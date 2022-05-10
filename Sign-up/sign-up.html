@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="sign-up.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Redressed&family=Rubik:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+  <div id="bar"></div>
+  <div id="bar-text">
+      <h2 id="brand"><a id="brand" href="http://127.0.0.1:5500/homepage.html">Indian Tadka</a></h2>
+      <h4><i><a id="dine" href="http://127.0.0.1:5500/dine-in.html">Dine-in</a></i></h4>
+      <h4><i><a id="order-now" href="http://127.0.0.1:5500/order-now.html">Order Now</a></i></h4>
+      <h4><i><a id="profile" href="http://127.0.0.1:5500/profile.html">Profile</a></i></h4>
+  </div>
+  <div class="form fcent">
+      <h1 id="signup">Sign-Up</h1><br>
+      <form action="homepage.html" method="post" onsubmit="return validation()" autocomplete="off" name="myForm">
+          <label for="fname" id="fname">First name: </label>
+          <input type="text" name="fname" id="fname-i" class="under left">
+          <label for="lname" id="lname" class="label">Last name: </label>
+          <input type="text" name="lname" id="lname-i" class="under left"><br>
+          <br>
+          <label for="mail" id="mail" class="label">Mail-ID: </label>
+          <input type="text" name="mail" id="mail-i" class="under left">
+          <label for="mobile" id="mobile" class="label">Mobile: </label>
+          <input type="text" name="mobile" id="mobile-i" class="under left"><br>
+          <span id="mob-check"></span>
+          <br>
+          <label for="address" id="address" class="label">Address: </label>
+          <input type="text" name="address" id="address-i" class="under left"><br>
+          <div id="length"></div>
+          <!-- <label for="flat" id="flat" class="label">Flat No.: </label>
+          <input type="text" name="flat" id="flat-i" class="under left">
+          <label for="city" id="city" class="label">City: </label>
+          <input type="text" name="city" id="city-i" class="under left"><br>
+          <br>
+          <label for="pincode" id="pincode" class="label">Pincode: </label>
+          <input type="text" name="pincode" id="pincode-i" class="under left">
+          <span id="pin-check"></span>
+          <label for="state" id="state">State: </label>
+          <select name="state" id="state-i">
+              <option value="none">Select</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+              <option value="Daman and Diu">Daman and Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+          </select>
+          <span id="state-check"></span> -->
+          <br>
+          <br>
+          <label for="pass" id="password" class="label">Password: </label>
+          <input type="password" name="password" id="password-i" class="under left"><br>
+          <label for="conf-pass" id="conf-pass">Confirm Password: </label>
+          <input type="password" name="conf-pass" id="conf-pass-i" class="under left"><br>
+          <br><span id="confirm"></span>
+          <br>
+          <center><button type="submit" id="submit" value="Sign-Up">Sign Up</button></center>
+          <br>
+          <center>
+              <h4 id="end">Already a Member? <span><a href="sign-in.html">Sign in</a></span></h4>
+          </center>
+      </form>
+  </div>
+  <div>
+    <footer>
+      <div class="box-container">
+         <div class="info">
+          <div class="about">
+            <h3 class="foot-hd abt"><i>About Us</i></h3>
+            <p class="abt-cont">Quality being a foundational element of our existence for over a decade and commitment to customer service
+              and satisfaction being our inspiration.</p>
+            <br>
+          </div>
+          <div class="branch">
+            <h3 class="foot-hd bran"><i>Branch Locations</i></h3>
+             <div class="br-cont">
+              <p>Mumbai</p>
+              <p>Thane</p>
+              <p>Pune</p>
+              <p>Banglore</p>
+              <p>Kerala</p>
+              <p>Jaipur</p>
+              <p>Kolhapur</p>
+            </div>
+            <br>
+          </div>
+          <div class="quick">
+            <h3 class="foot-hd qui"><i>Quick Links</i></h3>
+             <div class="qui-cont">
+              <a href="homepage.html">Home</a><br>
+              <a href="dine-in.html">Dine-in</a><br>
+              <a href="order-now.html">Order Now</a><br>
+              <a href="starters.html">Starters</a><br>
+              <a href="main-course.html">Main Course</a><br>
+              <a href="beverages.html">Beverages</a><br>
+              <a href="desserts.html">Desserts</a><br>
+            </div>
+          </div>
+         </div>
+        <div class="fol-box">
+          <center>
+            <h3 class="follow"><i>Follow Us</i></h3>
+            <a href="https://www.facebook.com/">Facebook | </a>
+            <a href="https://www.instagram.com/accounts/login/">Instagram | </a>
+            <a href="https://twitter.com/login?lang=en">Twitter | </a>
+            <a href="https://www.linkedin.com/login">Linkedin</a>
+          </center>
+        </div>
+        <center>
+          <h3 class="copyright">&copy;all rights reserved!</h3>
+        </center>
+      </footer>    
+  </div>
+  <script type="text/javascript" src="./sign-up.js"></script>
+</body>
+
+</html>

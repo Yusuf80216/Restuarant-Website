@@ -1,0 +1,109 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Dine-in.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Redressed&family=Rubik:wght@300&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" media="only screen and (max-width: 480px)" href="Dine-in.css" />
+  <title>Reservation</title>
+
+</head>
+  <body>
+    <div id="bar"></div>
+    <div id="bar-text">
+        <h2 id="brand"><a id="brand" href="http://127.0.0.1:5500/homepage.html">Indian Tadka</a></h2>
+        <h4><i><a id="dine" href="http://127.0.0.1:5500/dine-in.html">Dine-in</a></i></h4>
+        <h4><i><a id="order-now" href="http://127.0.0.1:5500/order-now.html">Order Now</a></i></h4>
+        <h4><i><a id="profile" href="http://127.0.0.1:5500/profile.html">Profile</a></i></h4>
+    </div>
+  <hr>
+     
+<div id="form-center">
+  <h2 id="reservation">Let us serve you better<br>
+  Don’t wait in a line to enjoy your meal. Reserve a table in advance with us.</h2>
+  <br>
+  <br>
+  
+    <form action="reservation.html" onsubmit=" return validateform()" method="post" autocomplete="off" name="myForm">
+    <label for="date" id="date" class="left">Date:</label>
+    <input type='date' name="date" id="date-i">
+    &nbsp; &nbsp;
+    <label for="time" id ="time">Time:</label>
+    <input type="time" name="time" id="time-i">
+    <br>
+    <br>
+    <br>
+    <label for="session" id="session" class="left">Session: </label>
+    <select id="session-i">
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+    </select>
+    &nbsp; &nbsp;
+    <label for="number" id="number">No. of guests:</label>
+    <input type="number" name="number" id="guests">
+    <span id="seat-check"></span>
+    <br>
+    <br>
+    <label for="comments" id="comments">Special Requests</label>
+    <textarea name="comments" id="comment-b" cols="50" rows="5"></textarea>
+    <br>
+    <br>
+    <button type="button" id="submit"><b>Reserve Table</b></button>
+  </form>
+  <hr>
+</div>
+  <footer>
+    <div class="box-container">
+       <div class="info">
+        <div class="about">
+          <h3 class="foot-hd abt"><i>About Us</i></h3>
+          <p class="abt-cont">Quality being a foundational element of our existence for over a decade and commitment to customer service
+            and satisfaction being our inspiration.</p>
+          <br>
+        </div>
+        <div class="branch">
+          <h3 class="foot-hd bran"><i>Branch Locations</i></h3>
+           <div class="br-cont">
+            <p>Mumbai</p>
+            <p>Thane</p>
+            <p>Pune</p>
+            <p>Banglore</p>
+            <p>Kerala</p>
+            <p>Jaipur</p>
+            <p>Kolhapur</p>
+          </div>
+          <br>
+        </div>
+        <div class="quick">
+          <h3 class="foot-hd qui"><i>Quick Links</i></h3>
+           <div class="qui-cont">
+            <a href="homepage.html">Home</a><br>
+            <a href="dine-in.html">Dine-in</a><br>
+            <a href="order-now.html">Order Now</a><br>
+            <a href="starters.html">Starters</a><br>
+            <a href="main-course.html">Main Course</a><br>
+            <a href="beverages.html">Beverages</a><br>
+            <a href="desserts.html">Desserts</a><br>
+          </div>
+        </div>
+       </div>
+      <div class="fol-box">
+        <center>
+          <h3 class="follow"><i>Follow Us</i></h3>
+          <a href="https://www.facebook.com/">Facebook | </a>
+          <a href="https://www.instagram.com/accounts/login/">Instagram | </a>
+          <a href="https://twitter.com/login?lang=en">Twitter | </a>
+          <a href="https://www.linkedin.com/login">Linkedin</a>
+        </center>
+      </div>
+      <center>
+        <h3 class="copyright">&copy;all rights reserved!</h3>
+      </center>
+    </footer>    
+</div>
+<script type="text/javascript" src="/form.js"></script>
+</body>
+
+</html>

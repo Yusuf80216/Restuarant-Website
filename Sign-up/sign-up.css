@@ -1,0 +1,861 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: url(/Images/mainc/background.jpg);
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(255, 115, 0, 0.548);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #ffb347;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #FF5F1F;
+}
+
+a{
+    text-decoration: none;
+}
+
+#brand{
+    color: #FFFAE4;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.5rem;
+    width: 10.5rem;
+}
+
+#bar{
+    background-color: rgb(255, 50, 50);
+    width: 100%;
+    height: 2.8rem;
+}
+
+#profile{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 1rem;
+    top: 0.8rem;
+}
+
+#order-now{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 6.3rem;
+    top: 0.8rem;
+}
+
+#dine{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 13.6rem;
+    top: 0.8rem;
+}
+
+#order-now::after, #dine::after, #profile::after{
+    content: "";
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -3px;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.5s ease;
+}
+
+#order-now:hover::after, #dine:hover::after, #profile:hover::after{
+    transform: scale(1, 1);
+}
+
+
+
+#signup{
+    position: absolute;
+    top: 1rem;
+}
+
+.form{
+    background-color: #000;
+    Opacity:0.9;
+    border-radius: 1rem;
+    color: #fff;
+    height: 30rem;
+    width: 50rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 6rem;
+    padding-top: 1rem;
+    box-shadow: -4px -4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fcent{
+    position: absolute;
+    left: 18%;
+}
+
+.form::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 47, 47);
+    width: 134.159px;
+    height: 1.7px;
+    top: 60px;
+    left: 41.5%;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.form:hover::after{
+    transform: scaleX(1);
+}
+
+
+input.under{
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid rgb(255, 145, 0);
+    position: absolute;
+    width: 12rem;
+    transition: ease-out 0.6s;
+}
+
+input.under:focus{
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    background: transparent;
+    color: rgb(255, 145, 0);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    width: 12rem;
+}
+
+select{
+    background-color: #ff7200;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+label{
+    font-size: 1rem;
+}
+
+#fname{
+    position: relative;
+    left: -4rem;
+}
+
+#fname-i{
+    position: relative;
+    left: -4rem;
+}
+
+#lname{
+    position: relative;
+    right: -3.3rem;
+}
+
+#lname-i{
+    position: relative;
+    right: -3.3rem;
+}
+
+#age{
+    position: relative;
+    left: -4rem;
+}
+
+#age-i{
+    position: relative;
+    left: -0.45rem;
+}
+
+#gender{
+    position: relative;
+    right: -6.9rem;
+}
+
+#gen{
+    position: relative;
+    height: 1.4rem;
+    width: 12.3rem;
+    right: -8.23rem;
+}
+
+#mail{
+    position: relative;
+    left: -4rem;
+}
+
+#mail-i{
+    position: relative;
+    left: -2.55rem;
+}
+
+#mobile{
+    position: relative;
+    left: 4.8rem;
+}
+
+#mobile-i{
+    position: relative;
+    right: -6.4rem;
+}
+
+#mob-check{
+    position: relative;
+    top: 0rem;
+    right: -27.8rem;
+    font-size:small;
+    color: red;
+}
+
+#flat{
+    position: relative;
+    left: -4rem;
+}
+
+#flat-i{
+    position: relative;
+    left: -2.5rem;
+}
+
+#city{
+    position: relative;
+    left: 4.85rem;
+}
+
+#city-i{
+    position: relative;
+    right: -7.93rem;
+}
+
+#pincode{
+    position: relative;
+    left: -4rem;
+}
+
+#pincode-i{
+    position: relative;
+    left: -2.65rem;
+}
+
+#state{
+    position: relative;
+    left: 4.7rem;
+}
+
+#state-i{
+    position: relative;
+    right: -7.366rem;
+    height: 1.3rem;
+    width: 12.3rem;
+}
+
+#address{
+    position: relative;
+    top: 0.5rem;
+    left: 22%;
+}
+
+#address-i{
+    position: relative;
+    top: 0.5rem;
+    left: 36.5%;
+    width: 21.75rem;
+}
+
+#password{
+    position: relative;
+    left: 8rem
+}
+
+#password-i{
+    position: relative;
+    left: 12.65rem
+}
+
+#conf-pass{
+    position: relative;
+    top: 1rem;
+    left: 8rem;
+}
+
+#conf-pass-i{
+    position: relative;
+    max-width: 100%;
+    top: 1rem;
+    right: -8rem;
+}
+
+#confirm{
+    position: relative;
+    left: 49.5%;
+    font-size:small;
+    color: rgb(255, 42, 0);
+}
+
+#submit{
+    position: relative;
+    width: 4rem;
+    top: 2rem;
+}
+
+#end{
+    position: relative;
+    top: 2rem;
+}
+
+#end a{
+    color: rgb(255, 136, 0);
+}
+
+#end a::after{
+    content: "";
+    left: 58.5%;
+    border-bottom: 1.5px solid rgb(255, 136, 0);
+    position: absolute;
+    width: 4rem;
+    bottom: 0;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.5s ease;
+}
+
+#end a:hover::after{
+    transform: scale(1, 1);
+    
+}
+
+#submit{
+    width: 5rem;
+    padding: 0.5rem 0;
+    background-color: #ff7200;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    box-shadow: 0 0 10px rgb(255, 136, 0);
+    border-radius: 5px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+#submit:hover, #submit:focus, #submit:active{
+    box-shadow: 0 0 20px rgb(255, 136, 0);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.box-container{
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    bottom: -78rem;
+    left: 0;
+    width: 100%;
+    opacity: 0.95;
+    height: auto;
+    padding-bottom: 7rem;
+}
+
+.info{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-top: 2px solid rgb(255, 102, 0);
+}
+
+.about{
+    width: 15rem;
+    position: relative;
+    left: 6rem;
+    top: 1rem;
+}
+
+.abt-cont{
+    padding-top: 1rem;
+    line-height: 2rem;
+    word-spacing: 0.5rem;
+}
+
+.quick{
+    position: relative;
+    right: 8rem;
+    left: 50%;
+    top: 1rem;
+}
+
+.qui-cont a{
+    padding-top: 1rem;
+    line-height: 3rem;
+    position: relative;
+    left: 0%;
+    color: rgb(255, 131, 49);
+    transition: 0.5s all;
+}
+
+.qui-cont{
+    text-align: center;
+}
+
+.qui-cont a:hover{
+    color: rgb(255, 46, 46);
+}
+
+.branch{
+    position: relative;
+    left: 25%;
+    top: 1rem;
+}
+
+.br-cont{
+    line-height: 3rem;
+    position: relative;
+    left: 22.5%;
+    width: 80px;
+    text-align: center;
+}
+
+.foot-hd{
+    padding-bottom: 2rem;
+}
+/* 
+.bran{
+    width: 10rem;
+} */
+
+.copyright{
+    padding-top: 2rem;
+    position: relative;
+    left: -1rem;
+}
+
+.fol-box a{
+    color: #FFA500;
+}
+
+.fol-box{
+    position: relative;
+    top: 1rem;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+}
+
+
+@media screen and (max-width: 480px) {   /* Mobile View */
+    body{
+        font-size: small;
+    }
+    #dine{
+        position: absolute;
+        right: 9.5rem;
+    }
+    #order-now{
+        position: absolute;
+        right: 4rem;
+    }
+    #order-now::before{
+        content: "| ";
+    }
+    #profile{
+        right: 0.5rem;
+    }
+    #profile::before{
+        content: "| ";
+    }
+    .form{
+        height: 54rem;
+        width: 27rem;
+        position: absolute;
+        top: 6rem;
+        left: 5%;
+        padding-top: 1rem;
+    }
+    .form::after{
+        position: absolute;
+        left: 8.5rem;
+    }
+    .label{
+        float: left;   
+    }
+    #fname{
+        position: relative;
+        top: -5rem;
+        left: -3.6rem;
+    }
+    
+    #fname-i{
+        position: relative;
+        top: -5rem;
+        left: 1.28rem;
+    }
+    #lname{
+        position: relative;
+        top: -1rem;
+        right: -2rem;
+    }
+    #lname-i{
+        position: relative;
+        top: -3.25rem;
+        left: 12.9rem;
+    }
+    #age{
+        position: relative;
+        top: -2rem;
+        left: 1.95rem;
+    }
+    #age-i{
+        position: relative;
+        top: -2.5rem;
+        left: 6.55rem;
+    }
+    #gender{
+        position: relative;
+        top: 1.5rem;
+        left: -0.25rem;
+    }
+    #gen{
+        position: relative;
+        top: -0.4rem;
+        left: 12.8rem;
+    }
+    #mail{
+        position: relative;
+        top: 0.6rem;
+        left: 1.95rem;
+    }
+    #mail-i{
+        position: relative;
+        left: 4.65rem;
+    }
+    #mobile{
+        position: relative;
+        top: 4rem;
+        left: -2.4rem;
+    }
+    #mobile-i{
+        position: relative;
+        top: 1.5rem;
+        left: 12.9rem;
+    }
+    #flat{
+        position: relative;
+        top: 2.5rem;
+        left: 1.95rem;
+    }
+    #flat-i{
+        position: relative;
+        top: 1.8rem;
+        left: 6.2rem;
+    } 
+    #city{
+        position: relative;
+        top: 5.5rem;
+        left: -2.3rem;
+    }
+    #city-i{
+        position: relative;
+        top: 3rem;
+        left: 12.9rem;
+    }
+    #pincode{
+        position: relative;
+        top: 4rem;
+        left: 1.95rem;
+    }
+    #pincode-i{
+        position: relative;
+        top: 3.5rem;
+        left: 5.65rem;
+    }
+    #state{
+        position: relative;
+        float: left;
+        top: 7rem;
+        left: -2.45rem;
+    }
+    #state-i{
+        position: relative;
+        top: 5.5rem;
+        left: 12.8rem;
+    }
+    #password{
+        position: relative;
+        top: 6rem;
+        left: 2rem;
+    }
+    #password-i{
+        position: relative;
+        top: 5.5rem;
+        left: 7.85rem;
+    }
+    #conf-pass{
+        position: relative;
+        top: 7rem;
+        left: 2rem;
+    }
+    #conf-pass-i{
+        position: relative;
+        max-width: 100%;
+        top: 7rem;
+        left: 3rem;
+    }
+    #submit{
+        position: relative;
+        width: 4rem;
+        top: 10rem;
+    }
+    #end{
+        position: relative;
+        top: 10rem;
+    }
+    /*  */
+    /*  */
+    /*  */
+
+    .box-container{
+        font-size:large;
+        bottom: -85rem;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        position: relative;
+        left: 2rem;
+    }
+    .abt{
+        padding-top: 1.5rem;
+        position: relative;
+        left: 67% !important;
+    }
+    .foot-hd{
+        padding-bottom: 0;
+        position: relative;
+        left: 50%;
+    }
+    .abt-cont{
+        width: 18rem;
+        position: relative;
+        left: 27%;
+        top: 0rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    .branch{
+        position: relative;
+        left: 0;
+        width: 15rem;
+    }
+    .bran{
+        position: relative;
+        left: 62.5%;
+    }
+    .br-cont{
+        position: relative;
+        left: 55%;
+        text-align: center;
+        padding-top: 1rem;
+        padding-left: 30%;
+        padding-bottom: 2rem;
+    }
+    .quick{
+        position: relative;
+        width: 10rem;
+        left: 42%;
+    }
+    .qui{
+        position: relative;
+        left: -1.7rem;
+    }
+    .qui-cont{
+        position: relative;
+        width: 5rem;
+        left: -0.1rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    .fol-box{
+        position: relative;
+        top: 4rem;
+        padding-top: 2rem;
+    }
+    .copyright{
+        position: relative;
+        bottom: -4rem;
+    }
+    footer{
+        position: relative;
+        bottom: -10rem;
+        height: 60rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){   /* Tablet View */
+    .form{
+        height: 32rem;
+        width: 45rem;
+        position: absolute;
+        top: 6rem;
+        left: 3.25%;
+        padding-top: 1rem;
+    }
+    #fname{
+        position: relative;
+        left: -3rem;
+    }
+    #fname-i{
+        position: relative;
+        left: -3rem;
+    }
+    #lname{
+        position: relative;
+        right: -2.3rem;
+    }
+    #lname-i{
+        position: relative;
+        right: -2.3rem;
+    }
+    
+    #age{
+        position: relative;
+        left: -3rem;
+    }
+    #age-i{
+        position: relative;
+        left: 0.45rem;
+    }
+    #gender{
+        position: relative;
+        right: -5.9rem;
+    }
+    #gen{
+        position: relative;
+        height: 1.4rem;
+        width: 12.3rem;
+        right: -7.23rem;
+    }
+    #mail{
+        position: relative;
+        left: -3rem;
+    }
+    #mail-i{
+        position: relative;
+        left: -1.6rem;
+    }
+    #mobile{
+        position: relative;
+        left: 3.8rem;
+    }
+    #mobile-i{
+        position: relative;
+        right: -5.4rem;
+    }
+    
+    #flat{
+        position: relative;
+        left: -3rem;
+    }
+    #flat-i{
+        position: relative;
+        left: -1.5rem;
+    }
+    #city{
+        position: relative;
+        left: 3.85rem;
+    }
+    #city-i{
+        position: relative;
+        right: -6.93rem;
+    }
+    #pincode{
+        position: relative;
+        left: -3rem;
+    }
+    #pincode-i{
+        position: relative;
+        left: -1.65rem;
+    }
+    #state{
+        position: relative;
+        left: 3.7rem;
+    }
+    #state-i{
+        position: relative;
+        right: -6.366rem;
+        height: 1.3rem;
+        width: 12.3rem;
+    }
+    #submit{
+        position: relative;
+        top: 3rem;
+    }
+    #end{
+        position: relative;
+        top: 3rem;
+    }
+    .box-container{
+        position: absolute;
+        bottom: -80rem;
+    }
+    .about{ 
+        position: relative;
+        left: 2rem !important; 
+    }
+    .branch{
+        position: relative;
+        left: 10% !important;
+    }
+    .br-cont{
+        left: 3rem;
+    }
+    .quick{
+        position: absolute;
+        width: 8rem;
+        left: 80% !important;
+    }
+    .copyright{
+        position: relative;
+        top: 3rem;
+    }
+}
+
+#f--name{
+    position: relative;
+    display: grid;
+}

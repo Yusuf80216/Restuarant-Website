@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="/Log-in/login.css">
+</head>
+<body>
+    <div id="bar">
+        <h2 id="brand"><i>Indian Tadka</i></h2>
+        <h4 id="dine"><a href="http://127.0.0.1:5500/dine-in.html">Dine-in</a></h4>
+        <h4 id="order-now"><a href="http://127.0.0.1:5500/dine-in.html">Order Now</a></h4>
+        <h4 id="profile"><a href="http://127.0.0.1:5500/profile.html">Profile</a></h4>
+    </div>
+    <div class="image"><img src="/Images/starter/bg.jpg" alt="" height="250px" width="250px"></div> 
+    <form name="myform">
+    <div class="form" method="post" autocomplete="off">
+        <h2 class="login">Login Here</h2>
+        <input type="email" name="email" placeholder="Enter your email" id="email"><br>
+        <input type="password" name="password" placeholder="Enter your password" id="pass" ><br>
+        <button class="btn" button type="submit" onclick="validate()">Log in</button>
+        <div id="length"></div>
+        <div id="error"></div>
+        <p class="Link">Don't have an account?<a href="#"><br>Sign up here</a></p>
+        <p class="liw">Log in with</p>
+        <section id="icons">   
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook facebook"></i></a>
+            <a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter twitter"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram instagram"></i></a>
+            <a href="https://myaccount.google.com/intro/profile"><i class="fab fa-google-plus plus"></i></a>
+        </section>
+    </div>
+  </form>
+    <script src="https://kit.fontawesome.com/3ca4525f24.js" crossorigin="anonymous"></script>
+    <!-- Footer section -->
+    <footer>
+      <div class="container">
+         <div class="info">
+          <div class="about">
+            <h3 class="foot-hd"><i>About Us</i></h3>
+            <p class="abt-cont">Quality being a foundational element of our existence for over a decade and commitment to customer service
+              and satisfaction being our inspiration.</p>
+            <br>
+          </div>
+          <div class="branch">
+            <h3 class="foot-hd"><i>Branch Locations</i></h3>
+             <div class="br-cont">
+              <p>Mumbai</p>
+              <p>Thane</p>
+              <p>Pune</p>
+              <p>Banglore</p>
+              <p>Kerala</p>
+              <p>Jaipur</p>
+              <p>Kolhapur</p>
+            </div>
+            <br>
+          </div>
+          <div class="quick">
+            <h3 class="foot-hd"><i>Quick Links</i></h3>
+             <div class="qui-cont">
+              <a href="homepage.html">Home</a><br>
+              <a href="dine-in.html">Dine-in</a><br>
+              <a href="order-now.html">Order Now</a><br>
+              <a href="starters.html">Starters</a><br>
+              <a href="main-course.html">Main Course</a><br>
+              <a href="beverages.html">Beverages</a><br>
+              <a href="desserts.html">Desserts</a><br>
+            </div>
+          </div>
+         </div>
+        <div class="fol-box">
+          <center>
+            <section id="icons">
+            <h3 class="follow"><i>Follow Us</i></h3>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook facebook"></i></a>
+            <a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter twitter"></i></a>
+            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram instagram"></i></a>
+            <a href="https://myaccount.google.com/intro/profile"><i class="fab fa-google-plus plus"></i></a>
+          </section>
+          </center>
+        </div>
+        <center>
+          <h3 class="copyright">&copy; All Rights Reserved!</h3>
+        </center>
+    </footer>   
+  </div> 
+  <script src="https://kit.fontawesome.com/3ca4525f24.js" crossorigin="anonymous"></script>
+  <script src="./validate.js"></script>
+</body>
+</html>
